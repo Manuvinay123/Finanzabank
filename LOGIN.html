@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body {
+			background-image: url('https://t4.ftcdn.net/jpg/04/34/74/73/360_F_434747384_QCfkIo7m67ABltTLKMneyHDwhL55fiQw.jpg');
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			font-family: 'Open Sans', sans-serif;
+		}
+        	.login-box {
+		background-image:url('https://e0.pxfuel.com/wallpapers/534/655/desktop-wallpaper-ultra-matte-black-background-warnerwave-xyz-thumbnail.jpg');
+		padding: 40px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		text-align: center;
+		font-size: 1.2rem;
+		color:white;
+		max-width: 400px;
+		width: 90%;
+	}
+
+	.user-box {
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	.user-box label {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 10px 0;
+		font-size: 1rem;
+		color:white;
+		pointer-events: none;
+		transition: 0.5s;
+	}
+
+	.user-box input {
+		width: 100%;
+		padding: 10px 0;
+		font-size: 1rem;
+		border: none;
+		border-bottom: 1px solid #fff;
+		background:transparent;
+		outline: none;
+		color:;
+	}
+
+	.user-box input:focus ~ label,
+	.user-box input:valid ~ label {
+		top: -20px;
+		left: 0;
+		color: #a0a0a0;
+		font-size: 0.8rem;
+	}
+
+	.button {
+		display: inline-block;
+		background-color: #1260CC;
+		color: #fff;
+		padding: 10px 20px;
+		margin-top: 20px;
+		border-radius: 25px;
+		text-decoration: none;
+		font-size: 1.2rem;
+		transition: background-color 0.3s ease-out;
+		cursor: pointer;
+		border: none;
+	}
+
+	.button:hover {
+		background-color: #3e8e41;
+	}
+
+	.signup-link {
+		display: block;
+		margin-top: 20px;
+		color: white;
+		font-size: 0.9rem;
+	}
+
+	.signup-link:hover {
+		text-decoration: underline;
+	}
+</style>
+</head>
+<body>
+	<div class="login-box">
+  <h1>Login</h1>
+  <form>
+    <div class="user-box">
+      <input type="text" name="username" required="">
+      <label><font size="3"color="White"><b>Username</b></font></label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password" required="">
+      <label><font size="3"color="White"><b>Password</b></font></label>
+    </div>
+    <button class="button" type="submit">Submit</button>
+    <a href="reg.html" class="signup-link">Don't have an account? <font size="5" color="blue">Sign up</font></a>
+  </form>
+</div>
+</body>
+</html>
